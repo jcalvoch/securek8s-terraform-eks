@@ -16,3 +16,5 @@ This is a template I created to mainly cover two main gaps in all the examples I
 - Adds administrator permissions to the cluster to Administrator SSO IAM Role for those interested of learning this for SSO roles
 - Deploys ingress controller using NGINX
 - Cluster observability using Container Insights and Prometheus
+
+## Note: Remember that this cluster is accesible via a private IP (VPC) only so you will need to add additional code to allow this new VPC to be accesible from the computer executing the Terraform script via either a bastion host or a Direct Connect or VPN Connection. Otherwise, set the "endpoint_public_access" to "True" initially (and perhaps only allow your IP) and set it to off once you have the connectivity part in place.
